@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>My Rust + Webpack project!</title>
+  </head>
+  <body>
+    <script src="index.js"></script>
+    
+    <div id="img_display" align="center">
+      <img id="my_img" style="height: 300px; width: 300px;"/>
+    </div>
+    <p id="process">Processing image...</p>
+
+    <h5>Edit image</h5>
+    <input type="file" id="img_file" onchange="fileImport();">
+    <select id="effects">
+      <option value="monochrome">Monchrome</option>
+      <option value="rotate_90">Rotate 90</option>
+      <option value="rotate_180">Rotate 180</option>
+      <option value="rotate_270">Rotate 270</option>
+      <option value="grayscale">Greyscale</option>
+    </select>
+    <input type = button id = "fileeffect" value = "Apply effect">
+
+    <h5>Resize image</h5>
+    height: <input type="number" id="img_height"/>
+    width: <input type="number" id="img_width">
+    <button id="resize_btn">Resize</button>
+
+    <h5>Blur Image</h5>
+    Sigma: <input type="number" id="blur_sigma"/>
+    <button id="blur_btn">Blur</button>
+    <br/><br/>
+    <input type="text" id="string">
+    <button id="hash">hash</button>
+    <p id="hash_string"></p>
+  </body>
+</html>
